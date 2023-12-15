@@ -23,7 +23,7 @@
 let isLoggedIn = 1
  
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);
 
 
 // 1 -> true // 0 -> false
@@ -31,5 +31,28 @@ console.log(booleanIsLoggedIn);
 
 let a = 22
 let stringNumber = String(a)
-console.log(stringNumber);       22
-console.log(typeof stringNumber);     //string
+// console.log(stringNumber);       22
+// console.log(typeof stringNumber);     //string
+
+
+// ********************Operations***************************
+let value = 4
+let nagValue = -value
+console.log(nagValue);
+
+
+let str1 = "Hello"
+let str2 = "Sanket"
+let result = str1 + str2
+// console.log(result);
+
+// console.log(1 + 2);      //"3"
+// console.log(1 + "2");    //"12"
+// console.log("1" + 2 + 3);  //"123"
+// console.log(1 + 2 + "3");   //"33"
+
+
+let ganeCounter = 100
+// ganeCounter++
+++ganeCounter
+console.log(ganeCounter);
