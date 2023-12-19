@@ -1,4 +1,4 @@
-//Primitive:
+//Primitive: a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties.
 
 // 7 tpes : String, Number, Boolean, null, undefined, Symbol, BigInt
 
@@ -39,3 +39,27 @@ myFunction()
 
 console.log(typeof myFunction);
 
+
+//***************************************************************** */
+/*********************Memory********************* */
+//Stack (Primitive) : (change in copy)
+let name = "sanket"
+let anotherName = name;
+anotherName = "Sam"
+
+console.log(name);
+console.log(anotherName);
+
+//Heap (Non - Primitive ) 
+
+let userOne = {
+    name : "sanny",
+    email : "user1@gmail.com",
+    upi : "user1@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "user@gmail.com"
+
+console.log(userOne);
+console.log(userOne);
