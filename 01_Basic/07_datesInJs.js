@@ -23,7 +23,18 @@ let myNewDate = new Date("2023-01-12")
 
 let myTimeStamp = Date.now()
 
-console.log(myTimeStamp);
+// console.log(myTimeStamp);
 
-console.log(myNewDate.getTime());
-console.log(Math.floor(Date.now()/1000));
+// console.log(myNewDate.getTime());
+// console.log(Math.floor(Date.now()/1000));
+
+
+let newDate = new Date()
+// console.log(newDate);
+// console.log(newDate.getMonth() + 1);
+// console.log(newDate.getDay());
+// console.log(newDate.getDate());
+
+// console.log(`Today ${newDate.toDateString()} and the day is  ${newDate.getDay()}`);    //string interpolation
+
+console.log(newDate.toLocaleString('default', {weekday: "long", timeZoneName: "long"}));
