@@ -1,0 +1,46 @@
+JavaScript Execution Context
+
+1. Global Execution Context {}
+2. Function Execution Context
+3. Eval Execution Context
+
+
+JS Code run in 2 phase:
+1. Memory Creation phase
+2. Execution phase
+
+example: 
+ 
+  let val1 = 10
+  let val2 = 20
+  function addNum(num1, num2){
+    let total = num1 + num2
+    return total
+  }
+  let result1 = addNum(val1, val2)
+  let result2  = addNum(12,33)
+
+
+  1.    Global Execution: -> this
+
+  2.   Memory phase :  ->                       
+            val1 -> undefined                        
+            val2 -> undefined
+            addNum -> defination
+            result1 -> undefined
+            result2 -> undefined
+
+
+  3.  Execution phase:  
+        val1 <- 10
+        val2 <- 20
+        addNum  ->      | New Variable Environment  |
+                        |            +              |
+                        |  Execution Thread         |   -->    ________________________________ 
+                        |                           |          |                               |
+                                                            Memory phase                       Execution phase
+                                                              val1 -> undefined                   num1 -> 10     
+                                                              val2 -> undefined                   num2 -> 20
+                                                              total -> undefined                  total -> 30      [return in Global Execution] 
+
+                         //Delete after use                                     
