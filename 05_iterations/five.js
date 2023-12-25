@@ -1,4 +1,6 @@
-//forEach
+// The forEach() method of Array instances executes a provided function once for each array element.
+//forEach(callbackFn): 
+// forEach(callbackFn, thisArg)
 
 const coding = ['js', 'cpp', 'java', 'py', 'ruby']
 
