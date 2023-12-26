@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body style="background-color: rgb(34, 33, 33); color: rgb(63, 151, 228);">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>    
+</body>
+
+<script>
+    //add list item
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('Java')
+    addLanguage('Python')
+
+
+    //optimize
+    function addOptiLang (langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang('TypeScript')
+    addOptiLang('Ruby')
+
+    //Edit
+    const secondLang =  document.querySelector("li:nth-child(2)")
+    //console.log(secondLang)
+    //secondLang.innerHTML = 'java'
+    const newLi = document.createElement('li')
+    newLi.textContent = 'Mojo'
+    secondLang.replaceWith(newLi)
+
+    //edit
+    const firstLang  = document.querySelector('li:first-child')
+    //console.log(firstLang)
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+    //Remove - ruby
+    const lastLang = document.querySelector('li:last-child')
+    console.log(lastLang)
+    lastLang.remove()
+
+
+    
+
+
+
+
+
+</script>
+
+</html>
