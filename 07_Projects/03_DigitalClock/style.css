@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(36, 32, 27);
+}
+.centre{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+span{
+    color:brown;
+    font-family: Georgia, 'Times New Roman';
+    font-size: x-large;
+}
+#clock{
+    background-color: orange;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 35px;
+    color: aliceblue;
+}
